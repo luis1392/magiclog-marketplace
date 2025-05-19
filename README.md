@@ -28,17 +28,22 @@
 
 
  ## MagicLog API -Project setup
-1.- Install deps 
+
+## 1.- Install deps 
 ```bash
 $ yarn install
 ```
-2.- Container for DB
+
+## 2. Clone the  ```.env.template```  and rename it to ```.env```
+
+## 3. Load the required environment variables in ```.env```
+
+## 4.- Container for DB
 ```bash
 $ docker-compose up -d
 ```
 
-
-## Compile and run the project
+## 5.- Compile and run the project
 
 ```bash
 # development
@@ -49,6 +54,11 @@ $ yarn run start:dev
 
 # production mode
 $ yarn run start:prod
+```
+
+## 6. Exec SEED 
+```
+http://localhost:3000/api/seed
 ```
 
 ## Run tests
