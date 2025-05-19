@@ -36,6 +36,12 @@ export class ProductsController {
     return this.productsService.search(searchPaginationDto);
   }
 
+  @Get('/my-products')
+  @Auth()
+  myProducts(@GetUser() user: User) {
+    return this.productsService.myProducts(user);
+  }
+
   @Get(':term')
   findOne(@Param('term') term: string) {
     console.log(term);

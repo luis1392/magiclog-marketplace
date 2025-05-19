@@ -68,6 +68,20 @@ export class ProductsService {
       this.handleError(error);
     }
   }
+  async myProducts(user: User) {
+    try {
+      // Find products created by the user
+
+      const queryBuilder = this.productRepository.createQueryBuilder('product');
+      const products = await queryBuilder
+        .where('product.userId = :userId', { userId: user.id })
+        .leftJoinAndSelect('product.images', 'images')
+        .getMany();
+      return products;
+    } catch (error) {
+      this.handleError(error);
+    }
+  }
 
   async findOne(term: string) {
     try {

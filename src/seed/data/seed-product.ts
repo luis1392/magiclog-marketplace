@@ -28,7 +28,7 @@ export const initialData: SeedData = {
     {
       email: 'admin@magiclog.com',
       name: 'Admin',
-      password: bcrypt.hashSync('admin', 10),
+      password: bcrypt.hashSync('MagicAdmin1', 10),
       roles: ['admin'],
       username: 'admin',
       isActive: true,
@@ -36,7 +36,7 @@ export const initialData: SeedData = {
     {
       email: 'user1@magiclog.com',
       name: 'user1',
-      password: bcrypt.hashSync('user1', 10),
+      password: bcrypt.hashSync('Magicuser1', 10),
       roles: ['user'],
       username: 'user1',
       isActive: true,
@@ -44,7 +44,7 @@ export const initialData: SeedData = {
     {
       email: 'user2@magiclog.com',
       name: 'user2',
-      password: bcrypt.hashSync('user2', 10),
+      password: bcrypt.hashSync('Magicuser2', 10),
       roles: ['user'],
       username: 'user2',
       isActive: true,
@@ -52,7 +52,7 @@ export const initialData: SeedData = {
     {
       email: 'user3@magiclog.com',
       name: 'user3',
-      password: bcrypt.hashSync('user3', 10),
+      password: bcrypt.hashSync('Magicuser3', 10),
       roles: ['user'],
       username: 'user3',
       isActive: true,
